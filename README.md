@@ -1,2 +1,8 @@
-# PGD_inversion
-Projected Gradient Descent inverting images from representation space
+# Projected Gradient Descent image inversion
+CNN models background
+
+Model inversion
+
+PGD
+
+Plotting gradients/ images
