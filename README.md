@@ -2,7 +2,7 @@
 ## Model invertibility 
 In the space of model robustness, understanding the representation space (penultimate layer vector space) of neural networks is a valuable metric. The smoothness of the representation space is an indicator of how easily an adversary can make an imperceptible change in the pixel space that dramatically impacts the loss of the classifier on that image.
 
-This experiment is seeing if we can find a certain target image by traversing the image space and making steps via projected gradient descent evaluated by loss in the representation space.
+This experiment is seeing if we can find a certain target image by traversing the image space and making steps via projected gradient descent evaluated by loss in the representation space. The loss is characterized by l1 loss of the vectors.
 
 ## Setup
 Here we use a few state-of-the-art CNN model architectures, primarily Resnet50. The robustness library https://github.com/MadryLab/robustness is used to make the "adversarial attacks" i.e. traverse the representation space to go from source to target image and try to match the target exactly.
