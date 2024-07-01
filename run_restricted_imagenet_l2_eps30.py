@@ -183,7 +183,7 @@ if not bool(args.pgd):
         optim.zero_grad()
         loss.backward()
         print("img grad", img_interpolation.grad.shape, ch.norm(img_interpolation.grad))
-        grad = ch.norm(img_interpolation
+        grad = ch.norm(img_interpolation)
         optim.step()
         inp_losses = img_dist(img_interpolation, img_match)
         inp_loss = ch.mean(inp_losses)
